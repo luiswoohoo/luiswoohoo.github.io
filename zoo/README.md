@@ -1,1 +1,3 @@
-Repo for ITSE-2402 projects
+
+
+[Check out the zoo](https://luiswoohoo.github.io/zoo/index.html)
