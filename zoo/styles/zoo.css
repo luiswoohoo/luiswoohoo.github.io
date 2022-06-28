@@ -29,12 +29,12 @@ nav a {
     }
 }
 
-nav img {
+/*nav img {
     height: 100%;
     width: 100%;
     object-fit: contain;
     border-radius: 10px;
-}
+}*/
 
 .animal-info {
     display: flex;
@@ -68,3 +68,23 @@ p {
     cursor: pointer;
     border-radius: 10px;
 }
+
+nav img {
+    transform:
+      perspective(750px)
+      translate3d(0px, 0px, -250px)
+      rotateX(27deg)
+      scale(0.9, 0.9);
+    border-radius: 20px;
+    border: 5px solid #e6e6e6;
+    box-shadow: 0 70px 40px -20px rgba(0, 0, 0, 0.2);
+    filter: blur(2px);
+    opacity: 0.5;
+    transition: 0.4s ease-in-out all;
+  }
+
+  nav img:hover {
+    transform: translate3d(0px, 0px, -250px);
+    filter: blur(0);
+    opacity: 1;
+  }
