@@ -6,6 +6,10 @@ function countdown(seconds) {
     // setInterval is basically a loop that keeps running on
     // a timer until clearInterval is called
     let intervalID = setInterval(
+        // setInterval takes a callback function
+        // Once the timer expires these functions are put into the 
+        // callback queue waiting to 
+        // be executed once the main stack is empty.
         function () {
             seconds--;
             console.log(seconds);
