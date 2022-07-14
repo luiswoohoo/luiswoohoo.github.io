@@ -7,8 +7,8 @@ function countdown(seconds) {
     // a timer until clearInterval is called.
     let intervalID = setInterval(
         // setInterval takes a callback function.
-        // Once the timer expires the callback function is put into the 
-        // callback queue waiting to be executed once the main stack is empty.
+        // When the timer expires the callback function is put into the 
+        // callback queue waiting to be executed once the call stack is empty.
         function () {
             seconds--;
             console.log(seconds);
