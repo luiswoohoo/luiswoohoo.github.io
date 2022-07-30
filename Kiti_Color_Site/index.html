@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,36 +9,32 @@
     <script src="color.js"></script>
     <title>Kiti Color</title>
 </head>
+
 <body>
     <header>
         <h1>Kiti's Kitchen Color Picker</h1>
     </header>
     <h2>Get colors from this site</h2>
-    <a href="https://www.sherwin-williams.com/architects-specifiers-designers/color/find-and-explore-colors/paint-colors-by-family#/active/color-wall/section/sherwin-williams-colors" target="_blank">Sherwin Williams Colors</a>
+    <a href="https://www.sherwin-williams.com/architects-specifiers-designers/color/find-and-explore-colors/paint-colors-by-family#/active/color-wall/section/sherwin-williams-colors"
+        target="_blank">Sherwin Williams Colors</a>
     <div class="input">
         <input type="color" id="colorInput">
         <input type="button" id="colorButton" value="Change Color" onclick="changeColor()">
     </div>
-    
+
     <div id="container">
-        
+
         <img src="images/kitchen_bg.png" alt="">
-       
+
     </div>
-    
-<script>
-    function changeColor() {
-        let color = document.getElementById('colorInput').value;
-        console.log(color);
-        // let colorBox = document.getElementsByClassName('color-box');
 
-        // colorBox[0].style.backgroundColor = color;
-        // colorBox[1].style.backgroundColor = color;
-
-        document.getElementById('container').style.backgroundColor = color;
-
-    }
-</script>
+    <script>
+        function changeColor() {
+            let color = document.getElementById('colorInput').value;
+            document.getElementById('container').style.backgroundColor = color;
+        }
+    </script>
 
 </body>
+
 </html>
