@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 
-:root {
+/* :root {
     --main-bg-color: brown;
-  }
+  } */
 
 header {
     text-align: center;
@@ -16,19 +16,13 @@ img {
     max-width: 100%;
 }
 
-.container {
-    width: 100%;
-    height: 100vh;
-    background-image: url("./images/kitchen.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-}
+
 
 .input {
     padding: 1rem;
 }
 
-.color-box {
+/* .color-box {
     display: flex;
     
     width: 80%;
@@ -39,4 +33,4 @@ img {
 
 .stencil {
     width: 10%;
-}
+} */

@@ -19,45 +19,22 @@
         <input type="button" id="colorButton" value="Change Color" onclick="changeColor()">
     </div>
     
-    <div class="container">
+    <div id="container">
         
-        <!-- <img src="images/kitchen.jpg" alt=""> -->
-        <div class="color-box">
-            <img class="stencil" src="images/SantanAna_Stencil.png" alt="">
-            <img class="stencil" src="images/SantanAna_Stencil.png" alt="">
-            <img class="stencil" src="images/SantanAna_Stencil.png" alt="">
-            <img class="stencil" src="images/SantanAna_Stencil.png" alt="">
-            <img class="stencil" src="images/SantanAna_Stencil.png" alt="">
-            <img class="stencil" src="images/SantanAna_Stencil.png" alt="">
-            <img class="stencil" src="images/SantanAna_Stencil.png" alt="">
-            <img class="stencil" src="images/SantanAna_Stencil.png" alt="">
-            <img class="stencil" src="images/SantanAna_Stencil.png" alt="">
-            <img class="stencil" src="images/SantanAna_Stencil.png" alt="">
-            
-        </div>
-        <div class="color-box">
-            <img class="stencil" src="images/SantanAna_Stencil.png" alt="">
-            <img class="stencil" src="images/SantanAna_Stencil.png" alt="">
-            <img class="stencil" src="images/SantanAna_Stencil.png" alt="">
-            <img class="stencil" src="images/SantanAna_Stencil.png" alt="">
-            <img class="stencil" src="images/SantanAna_Stencil.png" alt="">
-            <img class="stencil" src="images/SantanAna_Stencil.png" alt="">
-            <img class="stencil" src="images/SantanAna_Stencil.png" alt="">
-            <img class="stencil" src="images/SantanAna_Stencil.png" alt="">
-            <img class="stencil" src="images/SantanAna_Stencil.png" alt="">
-            <img class="stencil" src="images/SantanAna_Stencil.png" alt="">
-            
-        </div>
+        <img src="images/kitchen_bg.png" alt="">
+       
     </div>
     
 <script>
     function changeColor() {
         let color = document.getElementById('colorInput').value;
         console.log(color);
-        let colorBox = document.getElementsByClassName('color-box');
+        // let colorBox = document.getElementsByClassName('color-box');
 
-        colorBox[0].style.backgroundColor = color;
-        colorBox[1].style.backgroundColor = color;
+        // colorBox[0].style.backgroundColor = color;
+        // colorBox[1].style.backgroundColor = color;
+
+        document.getElementById('container').style.backgroundColor = color;
 
     }
 </script>
