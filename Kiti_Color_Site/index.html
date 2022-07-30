@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="color.js"></script>
+    <title>Kiti Color</title>
+</head>
+<body>
+    <header>
+        <h1>Kiti's Kitchen Color Picker</h1>
+    </header>
+    <div class="input">
+        <input type="color" id="colorInput">
+        <input type="button" id="colorButton" value="Change Color" onclick="changeColor()">
+    </div>
+    
+    <div class="container">
+        
+        <!-- <img src="images/kitchen.jpg" alt=""> -->
+        <div class="color-box">
+            <img class="stencil" src="images/SantanAna_Stencil.png" alt="">
+            <img class="stencil" src="images/SantanAna_Stencil.png" alt="">
+            <img class="stencil" src="images/SantanAna_Stencil.png" alt="">
+            <img class="stencil" src="images/SantanAna_Stencil.png" alt="">
+            <img class="stencil" src="images/SantanAna_Stencil.png" alt="">
+            <img class="stencil" src="images/SantanAna_Stencil.png" alt="">
+            <img class="stencil" src="images/SantanAna_Stencil.png" alt="">
+            <img class="stencil" src="images/SantanAna_Stencil.png" alt="">
+            <img class="stencil" src="images/SantanAna_Stencil.png" alt="">
+            <img class="stencil" src="images/SantanAna_Stencil.png" alt="">
+            
+        </div>
+        <div class="color-box">
+            <img class="stencil" src="images/SantanAna_Stencil.png" alt="">
+            <img class="stencil" src="images/SantanAna_Stencil.png" alt="">
+            <img class="stencil" src="images/SantanAna_Stencil.png" alt="">
+            <img class="stencil" src="images/SantanAna_Stencil.png" alt="">
+            <img class="stencil" src="images/SantanAna_Stencil.png" alt="">
+            <img class="stencil" src="images/SantanAna_Stencil.png" alt="">
+            <img class="stencil" src="images/SantanAna_Stencil.png" alt="">
+            <img class="stencil" src="images/SantanAna_Stencil.png" alt="">
+            <img class="stencil" src="images/SantanAna_Stencil.png" alt="">
+            <img class="stencil" src="images/SantanAna_Stencil.png" alt="">
+            
+        </div>
+    </div>
+    
+<script>
+    function changeColor() {
+        let color = document.getElementById('colorInput').value;
+        console.log(color);
+        let colorBox = document.getElementsByClassName('color-box');
+
+        colorBox[0].style.backgroundColor = color;
+        colorBox[1].style.backgroundColor = color;
+
+    }
+</script>
+
+</body>
+</html>
