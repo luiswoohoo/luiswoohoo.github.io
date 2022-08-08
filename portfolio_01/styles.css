@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    /* background-color: blueviolet; */
+}
+
+.container {
+    
+}
+
+.d-flex {
+    display: flex;
+}
+
+.logo {
+    max-width: 5rem;
+}
+
+.header__logo {
+    justify-content: space-between;
+
+}
