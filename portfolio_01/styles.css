@@ -27,12 +27,14 @@ img {
     font-style: normal;
     font-weight: 400;
 }
+
 @font-face {
     font-family: "Inter";
     src: url("fonts/inter/Inter-Bold.otf") format('truetype');
     font-style: normal;
     font-weight: 600;
 }
+
 @font-face {
     font-family: "Inter";
     src: url("fonts/inter/Inter-Light.otf") format('truetype');
@@ -61,6 +63,7 @@ img {
 
 /* Layout */
 body {
+    transition: background-color 1.5s ease;
     background-color: #7fffd4;
     margin: 0 auto;
 }
@@ -100,6 +103,7 @@ body {
     align-items: flex-end;
     padding-top: 10px;
     padding-bottom: 25px;
+    border: 2px red solid;
 }
 
 .project__text--title {
@@ -112,6 +116,7 @@ body {
 }
 
 .footer__container {
+    /* position: sticky; */
     justify-content: center;
     align-items: center;
     background-color: #252525;
@@ -123,4 +128,37 @@ body {
     font-weight: 200;
     color: #f5f5f5;
     opacity: .8;
+}
+
+/* Media Queries */
+@media screen and (min-width: 900px) {
+    body {
+        transition: background-color 1.5s ease;
+        background-color: lightcoral;
+    }
+
+    .project__img {
+        display: none;
+    }
+
+    .project__text--title {
+        font-size: 6.5rem;
+    }
+
+    .project__text--category {
+        font-size: 20px;
+    }
+
+    
+}
+
+
+/* Hover effect */
+#hover-area {
+    position: relative;
+}
+
+.followMouse {
+    z-index: -1;
+    position: absolute;
 }

@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Projects</title>
+    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico">
+
+    <script src="index.js"></script>
 </head>
 
 <body>
@@ -27,10 +30,10 @@
 
         </header>
 
-        <main class="main__container">
-            <div class="projects project-1 d-flex">
+        <main class="main__container" id="hover-area">
+            <div class="projects project-1 d-flex" >
                 <img src="images/logo.png" alt="" class="project__img">
-                <div class="project__text d-flex">
+                <div class="project__text d-flex hover-space" data-src="images/circle.png">
                     <div class="project__text--title">Project 1</div>
                     <div class="project__text--category">Category</div>
                 </div>
@@ -38,7 +41,7 @@
 
             <div class="projects project-2 d-flex">
                 <img src="images/logo.png" alt="" class="project__img">
-                <div class="project__text d-flex">
+                <div class="project__text d-flex hover-space" data-src="images/circle.png">
                     <div class="project__text--title">Project 2</div>
                     <div class="project__text--category">Category</div>
                 </div>
@@ -46,13 +49,11 @@
 
             <div class="projects project-3 d-flex">
                 <img src="images/logo.png" alt="" class="project__img">
-                <div class="project__text d-flex">
+                <div class="project__text d-flex hover-space" data-src="images/circle.png">
                     <div class="project__text--title">Project 3</div>
                     <div class="project__text--category">Category</div>
                 </div>
             </div>
-
-
 
         </main>
     </div>
