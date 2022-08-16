@@ -95,7 +95,9 @@ body {
 }
 
 .project__img {
-    max-width: 12rem;
+    max-width: 900px;
+    max-height: 370px;
+    object-fit: cover;
 }
 
 .project__text {

@@ -1,53 +1,51 @@
-const myObserver = new ResizeObserver(entries => {
-    entries.forEach(entry => {
-      console.log('width', entry.contentRect.width);
-      console.log('height', entry.contentRect.height);
-    });
-  });
-  
-  const someEl = document.getElementById('hover-area');
-  myObserver.observe(someEl);
+const mediaQuery = '(min-width: 900px)'
+const mediaQueryList = window.matchMedia(mediaQuery)
+const initialWindowSize = window.innerWidth
+
+if (initialWindowSize >= 900) {
+  showImage()
+}
+
+mediaQueryList.addEventListener('change', (event) => {
+  if (event.matches) {
+    showImage()
+  }
+})
 
 
 
+function showImage() {
 
-// document.addEventListener('DOMContentLoaded', function() {
-//     let resizer = new ResizeObserver(handleResize)
-//     resizer.observe(document.querySelector('.main-container'))
-// })
+  const hoverSpaces = document.getElementsByClassName('hover-space')
 
-// function handleResize(entries) {
-//     console.log('resize called')
-//     console.log(entries[0])
-// }
+  for (let space of hoverSpaces) {
+    let image = new Image()
+    image.src = space.dataset.src
+    image.style.width = '400px'
+    image.style.height = '400px'
+    image.style.borderRadius = '1000px'
+    image.style.border = '8px solid #fff'
+    image.style.transition = 'scale 1s ease'
+    image.className = 'followMouse'
 
+    space.addEventListener('mouseover', (event) => {
+      document.getElementById('hover-area').append(image)
+      image.style.transform = `rotate(${event.y / 30}deg)`
+      image.style.left = `${event.x + 20}px`
+      image.style.top = `${event.y - 300}px`
+    })
 
-// let hoverSpaces = document.getElementsByClassName("hover-space")
+    space.addEventListener('mouseout', () => {
+      console.log('mouse out')
+      image.remove()
+    })
 
+    space.addEventListener('mousemove', (event) => {
+      // image.style.transform = 'rotate(20deg)'
+      image.style.transform = `rotate(${event.y / 30}deg)`
+      image.style.left = `${event.x + 20}px`
+      image.style.top = `${event.y - 300}px`
+    })
+  }
 
-// for (let space of hoverSpaces) {
-//     let image = new Image()
-//     image.src = space.dataset.src
-//     image.className = "followMouse"
-
-//     space.addEventListener("mouseover", function(event) {
-//         console.log("mouseover")
-//         document.getElementById("hover-area").append(image)
-//         image.style.left = `${event.x - (image.width / 2)}px`
-//         image.style.top = `${event.y - (image.height / 2)}px`
-//         console.log(event.x)
-//         console.log(event.y)
-//     })
-
-//     space.addEventListener("mouseout", function() {
-//         image.remove()
-//     })
-// }
-
-// window.addEventListener('mousemove', function(event) {
-//     let image = document.querySelector('.followMouse');
-//     if (image) {
-//         image.style.left = `${event.x - (image.width / 2)}px`;
-//         image.style.top = `${event.y - (image.height / 2)}px`;
-//     }
-// })
+}
