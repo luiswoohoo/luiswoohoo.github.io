@@ -2,21 +2,18 @@
 // or if media query is triggered
 const mediaQuery = '(min-width: 900px)'
 const mediaQueryList = window.matchMedia(mediaQuery)
-const initialWindowSize = window.innerWidth
+const windowSize = window.innerWidth
 
-if (initialWindowSize >= 900) {
+if (windowSize >= 900) {
   showImage()
 }
 
-mediaQueryList.addEventListener('change', (event) => {
-  if (event.matches) {
-    showImage()
-  }
-})
+mediaQueryList.addEventListener('change', showImage)
 
-
-// This function shows image that follows mouse movement and changes background color
+// This function shows image that follows mouse movement
+// and changes background color
 function showImage() {
+  console.log('showImage')
   const hoverSpaces = document.getElementsByClassName('hover-space')
   const siteBG = document.getElementById('site-container')
 
