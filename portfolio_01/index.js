@@ -13,7 +13,6 @@ mediaQueryList.addEventListener('change', showImage)
 // This function shows image that follows mouse movement
 // and changes background color
 function showImage() {
-  console.log('showImage')
   const hoverSpaces = document.getElementsByClassName('hover-space')
   const siteBG = document.getElementById('site-container')
 
@@ -23,7 +22,7 @@ function showImage() {
     image.style.width = '500px'
     image.style.height = '500px'
     image.style.borderRadius = '1000px'
-    image.style.border = '8px solid #fff'
+    image.style.border = '8px solid #f5f5f5'
     image.style.transition = 'scale 1s ease'
     image.className = 'followMouse'
 
