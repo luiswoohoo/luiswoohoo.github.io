@@ -19,12 +19,12 @@ function showImage() {
   for (let space of hoverSpaces) {
     let image = new Image()
     image.src = space.dataset.src
-    image.style.width = '500px'
-    image.style.height = '500px'
-    image.style.objectFit = 'cover'
-    image.style.borderRadius = '1000px'
-    image.style.border = '1px solid #f5f5f5'
-    image.style.transition = 'scale 1s ease'
+    // image.style.width = '500px'
+    // image.style.height = '500px'
+    // image.style.objectFit = 'cover'
+    // image.style.borderRadius = '1000px'
+    // image.style.border = '1px solid #f5f5f5'
+    // image.style.transition = 'scale 1s ease'
     image.className = 'followMouse'
 
     space.addEventListener('mouseover', (event) => {
