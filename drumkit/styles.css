@@ -19,7 +19,7 @@ img {
     gap: 1rem;
     min-height: 100vh;
     padding: 0 1rem;
-    background-image: url(images/rock1.jpg), linear-gradient(90deg, red, blue);
+    background-image: url(images/rock1.png), linear-gradient(90deg, red, blue);
     background-size: cover;
     background-position: center;
     background-blend-mode: multiply;
