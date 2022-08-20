@@ -37,8 +37,4 @@ for (const key of keys) {
 
 window.addEventListener('keydown', playSound)
 
-if ('caches' in window){
-    // you can safely insert your snippet here
-    console.log('has caching')
-    // alert('has cache')
-}
+
