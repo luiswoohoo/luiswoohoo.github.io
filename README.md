@@ -1,1 +1,1 @@
-Repo for ITSE-2402 projects
+Repo for personal portfolio site
