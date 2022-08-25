@@ -1,9 +1,65 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Hello world!</title>
-    </head>
-    <body>
-        <h1>We meet again... Hello world</h1>
-    </body>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Projects</title>
+    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico">
+
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <div class="site-container" id="site-container">
+        <header class="header__container">
+            <div class="header__logo d-flex">
+                <img src="images/logo.png" alt="portofolio logo" class="logo">
+
+                
+                <a href="#" class="btn contact-btn">Contact</a>
+            </div>
+
+            <div class="header__text">
+                <div class="portfolio-slogan">Web Dev Projects</div>
+                <div class="portfolio-category">HTML • CSS • JavaScript</div>
+            </div>
+
+        </header>
+
+        <main class="main__container" id="hover-area">
+            <div class="projects project-1 d-flex" >
+                <img src="images/project01.png" alt="" class="project__img">
+                <div class="project__text d-flex hover-space" data-src="images/project01.png" data-color="#8F5D8C">
+                    <div class="project__text--title"><a href="../drumkit/index.html">Project 1</a></div>
+                    <div class="project__text--category">Category</div>
+                </div>
+            </div>
+
+            <div class="projects project-2 d-flex">
+                <img src="images/img2.jpg" alt="" class="project__img">
+                <div class="project__text d-flex hover-space" data-src="images/img2.jpg" data-color="#23ACD8">
+                    <div class="project__text--title"><a href="#">Project 2</a></div>
+                    <div class="project__text--category">Category</div>
+                </div>
+            </div>
+
+            <div class="projects project-3 d-flex">
+                <img src="images/img3.jpg" alt="" class="project__img">
+                <div class="project__text d-flex hover-space" data-src="images/img3.jpg" data-color="#C619B1">
+                    <div class="project__text--title"><a href="#">Project 3</a></div>
+                    <div class="project__text--category">Category</div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+    <footer class="footer__container d-flex">
+        <div class="footer__text">Copyright © 2022 Luis Aguiñaga</div>
+    </footer>
+
+</body>
+
 </html>
