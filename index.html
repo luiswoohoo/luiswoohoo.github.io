@@ -1,73 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>Projects</title>
+        <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Projects</title>
-    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico">
+        <script src="index.js" defer></script>
+    </head>
 
-    <script src="index.js" defer></script>
-</head>
+    <body>
+        <div class="site-container" id="site-container">
+            <header class="header__container">
+                <div class="header__logo d-flex">
+                    <img src="images/logo.png" alt="portofolio logo" class="logo" />
 
-<body>
-    <div class="site-container" id="site-container">
-        <header class="header__container">
-            <div class="header__logo d-flex">
-                <img src="images/logo.png" alt="portofolio logo" class="logo">
-
-                
-                <a href="#" class="btn contact-btn">Contact</a>
-            </div>
-
-            <div class="header__text">
-                <div class="portfolio-slogan">Web Dev Projects</div>
-                <div class="portfolio-category">HTML • CSS • JavaScript • React</div>
-            </div>
-
-        </header>
-
-        <main class="main__container" id="hover-area">
-            <div class="projects project-0 d-flex" >
-                <img src="images/quizzical.png" alt="" class="project__img">
-                <div class="project__text d-flex hover-space" data-src="images/quizzical.png" data-color="rgb(80, 84, 159)">
-                    <div class="project__text--title"><a href="https://quizzicalr.netlify.app/">Project 0</a></div>
-                    <div class="project__text--category">React</div>
+                    <a href="#" class="btn contact-btn">Contact</a>
                 </div>
-            </div>
 
-            <div class="projects project-1 d-flex" >
-                <img src="images/movie-watch.png" alt="" class="project__img">
-                <div class="project__text d-flex hover-space" data-src="images/movie-watch.png" data-color="rgb(49, 54, 74)">
-                    <div class="project__text--title"><a href="https://mov-watch.netlify.app/">Project 1</a></div>
-                    <div class="project__text--category">Serverless Functions</div>
+                <div class="header__text">
+                    <div class="portfolio-slogan">Web Dev Projects</div>
+                    <div class="portfolio-category">HTML • CSS • JavaScript • React</div>
                 </div>
-            </div>
+            </header>
 
-            <div class="projects project-2 d-flex">
-                <img src="images/drumkit.png" alt="" class="project__img">
-                <div class="project__text d-flex hover-space" data-src="images/drumkit.png" data-color="#8F5D8C">
-                    <div class="project__text--title"><a href="./drumkit/index.html">Project 2</a></div>
-                    <div class="project__text--category">JS</div>
+            <main class="main__container" id="hover-area">
+                <div class="projects project-0 d-flex">
+                    <img src="images/quizzical.png" alt="" class="project__img" />
+                    <div
+                        class="project__text d-flex hover-space"
+                        data-src="images/quizzical.png"
+                        data-color="rgb(80, 84, 159)"
+                    >
+                        <div class="project__text--title">
+                            <a href="https://quizzicalr.netlify.app/">Project 0</a>
+                        </div>
+                        <div class="project__text--category">React</div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="projects project-3 d-flex">
-                <img src="images/color-proj.png" alt="" class="project__img">
-                <div class="project__text d-flex hover-space" data-src="images/color-proj.png" data-color="#23ACD8">
-                    <div class="project__text--title"><a href="./Kiti_Color_Site/index.html">Project 3</a></div>
-                    <div class="project__text--category">HTML</div>
+                <div class="projects project-1 d-flex">
+                    <img src="images/movie-watch.png" alt="" class="project__img" />
+                    <div
+                        class="project__text d-flex hover-space"
+                        data-src="images/movie-watch.png"
+                        data-color="rgb(255, 217, 98)"
+                    >
+                        <div class="project__text--title">
+                            <a href="https://mov-watch.netlify.app/">Project 1</a>
+                        </div>
+                        <div class="project__text--category">Serverless Functions</div>
+                    </div>
                 </div>
-            </div>
 
-        </main>
-    </div>
-    <footer class="footer__container d-flex">
-        <div class="footer__text">Copyright © 2022 Luis Aguiñaga</div>
-    </footer>
+                <div class="projects project-2 d-flex">
+                    <img src="images/drumkit.png" alt="" class="project__img" />
+                    <div
+                        class="project__text d-flex hover-space"
+                        data-src="images/drumkit.png"
+                        data-color="#8F5D8C"
+                    >
+                        <div class="project__text--title">
+                            <a href="./drumkit/index.html">Project 2</a>
+                        </div>
+                        <div class="project__text--category">JS</div>
+                    </div>
+                </div>
 
-</body>
-
+                <div class="projects project-3 d-flex">
+                    <img src="images/color-proj.png" alt="" class="project__img" />
+                    <div
+                        class="project__text d-flex hover-space"
+                        data-src="images/color-proj.png"
+                        data-color="#23ACD8"
+                    >
+                        <div class="project__text--title">
+                            <a href="./Kiti_Color_Site/index.html">Project 3</a>
+                        </div>
+                        <div class="project__text--category">HTML</div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <footer class="footer__container d-flex">
+            <div class="footer__text">Copyright © 2022 Luis Aguiñaga</div>
+        </footer>
+    </body>
 </html>
